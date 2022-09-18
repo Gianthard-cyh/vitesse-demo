@@ -11,10 +11,12 @@
     "up": "taze major -I"
   },
   "dependencies": {
+    "@antv/x6": "^1.34.1",
     "@vueuse/core": "^9.2.0",
     "pnpm": "^7.11.0",
     "smooth-corners": "^1.0.8",
     "vue": "^3.2.38",
+    "vue-resize-observer": "next",
     "vue-router": "^4.1.5"
   },
   "devDependencies": {

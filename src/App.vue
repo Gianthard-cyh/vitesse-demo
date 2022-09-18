@@ -6,6 +6,7 @@
   <button i-carbon-moon mt5 ml5 text-lg @click="toggleDark()" />
   <Welcome />
   <Todo />
+  <DAGdemo />
 </template>
 
 <style scoped>
