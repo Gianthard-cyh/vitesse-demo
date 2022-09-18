@@ -29,10 +29,10 @@ function onDelete(index: number) {
     <p>
       看看我们都为你准备了什么
     </p>
-    <button px5 py2 bg-gray-100 rounded-2 border dark-border-gray8 mx2 mt2 ml0 hover:bg-gray-200 dark-bg-gray-8 dark-hover="bg-gray-7 border-gray" transition>
+    <button btn>
       确定
     </button>
-    <button px5 py2 bg-gray-100 rounded-2 border dark-border-gray8 mx2 mt2 ml0 hover:bg-gray-200 dark-bg-gray-8 dark-hover="bg-gray-7 border-gray" transition>
+    <button btn transition>
       取消
     </button>
   </div>

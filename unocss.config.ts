@@ -10,7 +10,7 @@ import {
 
 export default defineConfig({
   shortcuts: [
-    ['btn', 'px-4 py-1 rounded inline-block bg-teal-600 text-white cursor-pointer hover:bg-teal-700 disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50'],
+    ['btn', "px5 py2 bg-gray-100 rounded-2 border dark-border-gray8 mx2 mt2 ml0 hover:bg-gray-200 dark-bg-gray-8 dark-hover:bg-gray-7  dark-hover:border-gray transition"],
     ['icon-btn', 'text-[0.9em] inline-block cursor-pointer select-none opacity-75 transition duration-200 ease-in-out hover:opacity-100 hover:text-teal-600 !outline-none'],
   ],
   presets: [
