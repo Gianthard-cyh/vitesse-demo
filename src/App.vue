@@ -22,21 +22,8 @@ function onDelete(index: number) {
 
 <template>
   <button i-carbon-moon mt5 ml5 text-lg @click="toggleDark()" />
-  <Card>
-    <p text-2xl font-bold pb-2>
-      欢迎回来！
-    </p>
-    <p>
-      看看我们都为你准备了什么
-    </p>
-    <button btn>
-      确定
-    </button>
-    <button btn transition>
-      取消
-    </button>
-  </Card>
-  <card flex-col>
+  <Welcome />
+  <Card flex-col>
     <input v-model="value" type="text" text-xl w-full block p3 rounded border focus:bg-gray1 dark-focus:bg-gray-7 dark-bg-gray-9 light-bg-gray-2 outline-none transition @keydown.enter="onSubmit">
     <TransitionGroup name="list" tag="ul">
       <li v-for="item, index in list" :key="item.time.getMilliseconds()" p5 border rounded-2 my2 flex="~" items-center>
@@ -52,7 +39,7 @@ function onDelete(index: number) {
         <button i-carbon-checkmark h-12 text-xl px3 bg-green-7 mx2 dark-bg-green-4 @click="onDelete(index)" />
       </li>
     </TransitionGroup>
-  </card>
+  </Card>
 </template>
 
 <style scoped>
