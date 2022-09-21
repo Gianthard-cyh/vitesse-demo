@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { Graph } from '@antv/x6'
 const el = ref(null)
+const wrapper = ref(null)
 
 const graphData = {
   // 节点
@@ -31,23 +32,17 @@ const graphData = {
   ],
 }
 let graph: Graph
-onMounted(() => {
+tryOnMounted(() => {
   graph = new Graph({
     container: el.value!,
-    height: 400,
   })
   graph.fromJSON(graphData)
 })
-
-interface IResize {
-  width: number
-  height: number
-}
-
-function onResize({ width, height }: IResize) {
+useResizeObserver(wrapper, (entries) => {
+  const { height, width } = entries[0].contentRect
   graph.resize(width, height)
-  console.log('onresize')
-}
+  // console.log(entries)
+})
 </script>
 
 <template>
@@ -55,7 +50,7 @@ function onResize({ width, height }: IResize) {
     <div text-xl font-semibold>
       DAG
     </div>
-    <div v-resize="onResize" class="wrapper">
+    <div ref="wrapper" class="wrapper" h-100>
       <div id="el" ref="el" w-full />
     </div>
   </Card>
