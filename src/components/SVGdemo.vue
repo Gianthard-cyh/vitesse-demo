@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const width = ref(1000)
+const width = ref(1250)
 const height = ref(300)
 
 const refSVGContainer = ref(null)

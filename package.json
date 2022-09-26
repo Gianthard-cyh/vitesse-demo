@@ -12,7 +12,9 @@
   },
   "dependencies": {
     "@antv/x6": "^1.34.1",
+    "@vueuse/components": "^9.2.0",
     "@vueuse/core": "^9.2.0",
+    "pinia": "^2.0.22",
     "pnpm": "^7.11.0",
     "smooth-corners": "^1.0.8",
     "vue": "^3.2.38",

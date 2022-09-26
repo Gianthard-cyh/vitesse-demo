@@ -5,6 +5,7 @@ import App from './App.vue'
 import '@unocss/reset/tailwind.css'
 import './styles/main.css'
 import 'uno.css'
+import { createPinia } from 'pinia'
 
 const app = createApp(App)
 const router = createRouter({
@@ -12,4 +13,6 @@ const router = createRouter({
   routes,
 })
 app.use(router)
+const pinia = createPinia()
+app.use(pinia)
 app.mount('#app')
