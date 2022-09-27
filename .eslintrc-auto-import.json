@@ -144,6 +144,7 @@
     "useDisplayMedia": true,
     "useDocumentVisibility": true,
     "useDraggable": true,
+    "useDraggableNode": true,
     "useDropZone": true,
     "useElementBounding": true,
     "useElementByPoint": true,
