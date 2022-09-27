@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { useNodeDemoStore } from '~/stores/nodeDemoStore'
-import type { INode, IPort } from '~/types/Node'
+import { useNodeDemoStore } from './stores/nodeDemoStore'
+import type { INode, IPort } from './types/Node'
 
 const Nodes = reactive<INode[]>([
   { id: 1, title: '节点标题', x: 50, y: 50, ports: [{ id: 1, x: 0, y: 50 }, { id: 2, x: 0, y: 50 }] },

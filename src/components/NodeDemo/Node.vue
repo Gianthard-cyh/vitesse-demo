@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { MaybeRef } from '@vueuse/core'
-import { useDraggableNode } from '~/composables/useDraggableNode'
-import type { INode } from '~/types'
+import { useDraggableNode } from './composable/useDraggableNode'
+import type { INode } from './types'
 
 const props = defineProps<{ node: INode; refContainer: MaybeRef<HTMLElement | null | undefined> }>()
 const emit = defineEmits<{ (e: 'end', x: number, y: number): void; (e: 'start', x: number, y: number): void }>()
