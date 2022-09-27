@@ -12,7 +12,7 @@ declare module '@vue/runtime-core' {
     DAGdemo: typeof import('./src/components/DAGdemo.vue')['default']
     Footer: typeof import('./src/components/Footer.vue')['default']
     Node: typeof import('./src/components/NodeDemo/Node.vue')['default']
-    NodeDemo: typeof import('./src/components/NodeDemo/NodeDemo.vue')['default']
+    NodeDemo: typeof import('./src/components/NodeDemo.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     SVGdemo: typeof import('./src/components/SVGdemo.vue')['default']
